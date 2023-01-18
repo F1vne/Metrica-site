@@ -438,6 +438,7 @@ li {
     border-radius: 0.3rem;
     transition: all 0.2s ease-in;
     border: none;
+    cursor: pointer;
 }
 
 .cards__button:hover {
