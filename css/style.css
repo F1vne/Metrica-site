@@ -57,10 +57,6 @@ li {
     position: relative;
 }
 
-
-/* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Roboto Slab', serif; */
-
 .header__menu-list {
     display: flex;
     gap: 2.125rem;
@@ -379,7 +375,7 @@ li {
     font-weight: 400;
     font-size: 19px;
     line-height: 22px;
-    padding-right: 1px;
+    padding-right: 2px;
 }
 
 .plansPricing__cards {
@@ -479,7 +475,6 @@ li {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
-    /* display: flex; */
     padding-top: 1.25rem;
     align-items: baseline;
 }
