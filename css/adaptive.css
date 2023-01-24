@@ -9,23 +9,23 @@
     .grow {
         padding-top: 35px;
     }
-    .grow__info {
+    .grow__inner {
         flex-direction: column;
         align-items: center;
         flex-wrap: none;
         gap: 0;
     }
-    .grow__info-text {
+    .grow__info-article {
         align-items: center;
         flex-direction: column;
         display: flex;
         width: 100%;
         text-align: center;
     }
-    .grow__info-text h1 {
+    .grow__info-title {
         max-width: 100%;
     }
-    .grow__info-text p {
+    .grow__info-text {
         max-width: 100%;
     }
     .grow__info-links {
@@ -34,23 +34,23 @@
         align-items: center;
         justify-content: center;
     }
-    .plansPricing__container {
+    .plansPricing__inner {
         padding: 30px 0;
     }
     .plansPricing__cards {
         padding-top: 30px;
     }
-    .sayAboutUs__container {
+    .sayAboutUs__inner {
         padding: 30px 0;
     }
-    .sayAboutUs__container p {
+    .sayAboutUs__inner-title {
         padding-top: 15px;
     }
     .partners__links {
         max-width: 100%;
         flex-wrap: wrap;
     }
-    .footer .container {
+    .footer__inner {
         max-width: 100%;
         flex-wrap: wrap;
         align-items: center;
@@ -62,7 +62,7 @@
     .footer__socialMedia {
         max-width: 100%;
     }
-    .footer__socialMedia img {
+    .footer__socialMedia-img {
         max-width: 100%;
     }
     .footer__moreInfo {
@@ -71,13 +71,10 @@
 }
 
 @media (max-width: 880px) {
-    .sync__other ul {
+    .sync__menu-list {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-
-@media (max-width: 800px) {
 }
 
 @media (max-width: 765px) {
@@ -94,7 +91,7 @@
 }
 
 @media (max-width: 672px) {
-    .important__sync {
+    .sync__important {
         max-width: 100%;
         display: flex;
         justify-content: center;
@@ -147,17 +144,17 @@
     .header__menu.active {
         top: 0;
     }
-    .header__list {
+    .header__menu-list {
         display: block;
         font-size: 10px;
     }
     .menu-link {
         font-size: 24px;
     }
-    .menu-item {
+    .header__menu-item {
         margin: 0px 0px 20px 0px;
     }
-    .nav__logo {
+    .header__logo {
         flex: 0 0 64px;
     }
     .header__body {
@@ -212,7 +209,7 @@
 }
 
 @media (max-width: 443px) {
-    .important__sync {
+    .sync__important {
         align-items: center;
         flex-direction: column;
     }

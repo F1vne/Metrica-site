@@ -61,7 +61,7 @@ li {
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Roboto Slab', serif; */
 
-.header__list {
+.header__menu-list {
     display: flex;
     gap: 2.125rem;
     flex-direction: row;
@@ -72,23 +72,23 @@ li {
 .header__burger {
     display: none;
 }
-.nav__logo {
+.header__logo-link {
     flex: 0 0 84px;
     position: relative;
     z-index: 3;
     
 }
 
-.nav__logo img {
+.header__logo {
     max-width: 100%;
     transition: all 0.3s ease;
 }
 
-.nav__logo img:hover {
+.header__logo:hover {
     transform: translateY(-2px);
 }
 
-.nav__logo img:active {
+.header__logo:active {
     transform: scale(0.95);
 }
 
@@ -96,7 +96,7 @@ li {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease;
 }
 
 .menu-link:hover {
@@ -104,6 +104,13 @@ li {
     padding: 10px;
     border-radius: 7rem;
     font-size: 16px;
+}
+
+.menu-link:active {
+    background-color: #c0bfbf;
+}
+.header__menu-item:active {
+   transform: scale(0.95); 
 }
 
 .grow {
@@ -114,25 +121,25 @@ li {
     padding-top: 74px;
 }
 
-.grow__info {
+.grow__inner {
     display: flex;
     flex-wrap: nowrap;
     padding: 70px 0;
     gap: 68px;
 }
 
-.grow__info-text {
+.grow__info-article {
     width: 25.75rem;
     color: white;
 }
 
-.grow__info-text h1 {
+.grow__info-title {
     max-width: 25.75rem;
     font-size: 38px;
     line-height: 44px;
 }
 
-.grow__info-text p {
+.grow__info-text {
     max-width: 23.25rem;
     font-size: 20px;
     line-height: 26px;
@@ -152,7 +159,7 @@ li {
     font-size: 16px;
     line-height: 22px;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.1s ease-in;
 }
 
 .grow__info-button:hover {
@@ -165,7 +172,7 @@ li {
 .grow__info-button:active {
     transition: background 0.2s ease-in-out;
     color: black;
-    background-color: #c0bfbf;;
+    background-color: #c0bfbf;
     transform: scale(0.95);
 }
 
@@ -190,7 +197,7 @@ li {
     font-size: 16px;
 }
 
-.grow__info-img img {
+.grow__inner-img {
     max-width: 100%;
 }
 
@@ -198,14 +205,14 @@ li {
     background-color: #3E5C50;
     max-width: 100%;
 }
-.grow__press {
+.press__inner {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.grow__press h3 {
+.press__title {
     padding-top: 1.75rem;
     font-style: normal;
     font-weight: 400;
@@ -214,26 +221,25 @@ li {
     color: rgba(255, 255, 255, 0.31);
 }
 
-.grow__press-links {
+.press-links {
     padding-bottom: 38px;
 }
 
-.grow__press-links a {
+.press__link {
     padding: 0 23px;
-    
 }
 
-.grow__press-links img {
+.press__link-img {
     max-width: 100%;
     padding-top: 25px;
     transition: all 0.2s ease-out;
 }
 
-.grow__press-links img:hover {
+.press__link-img:hover {
     transform: translateY(-4px);
 }
 
-.grow__press-links img:active {
+.press__link-img:active {
     transform: scale(0.9);
 }
 .sync {
@@ -241,24 +247,24 @@ li {
     padding-top: 4.375rem;
 }
 
-.sync__container {
+.sync__inner {
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column;
 }
 
-.sync__container h2 {
+.big-title {
     font-size: 29px;
     line-height: 36px;
     font-weight: 400;
+    color: #333333;
 }
 
-.sync__container p {
+.sync__heading {
     padding-top: 0.625rem;
     font-size: 19px;
     line-height: 22px;
-
 }
 
 .sync__webApp {
@@ -271,28 +277,28 @@ li {
     height: 18.3125rem;
 }
 
-.sync__webApp-info h3 {
+.sync__webApp-info {
+    text-align: left;
+    padding-top: 30px;
+}
+
+.sync__webApp-title {
     padding-top: 10px;
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
 }
 
-.sync__webApp-info p {
+.sync__WebApp-text {
     padding-top: 1.0625rem;
     text-align: left;
     font-size: 16px;
     line-height: 22px;
 }
 
-.sync__webApp-info img {
-    width: 1.875rem;
-    height: 1.875rem;
-}
-
-.sync__webApp-info {
-    text-align: left;
-    padding-top: 30px;
+.sync__icon {
+    width: 30px;
+    height: 30px;
 }
 
 .sync__mobileApp {
@@ -308,22 +314,17 @@ li {
     padding-right: 10px;
 }
 
-.sync__mobileApp-info h3 {
+.sync__mobileApp-title {
     padding-top: 10px;
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
 }
 
-.sync__mobileApp-info p {
+.sync__mobileApp-text {
     padding-top: 17px;
     font-size: 16px;
     line-height: 22px;
-}
-
-.sync__mobileApp-info img {
-    width: 1.875rem;
-    height: 1.875rem;
 }
 
 .sync__mobileApp-info {
@@ -334,18 +335,18 @@ li {
     max-width: 100%;
 }
 
-.sync__other ul {
+.sync__menu-list {
     display: flex;
     justify-content: space-between;
     gap: 1.25rem;
 }
 
-.sync__other>ul>li {
+.sync__menu-item {
     text-align: left;
     max-width: 220px;
 }
 
-.sync__other>ul>li>h3 {
+.sync__other-title {
     padding-top: 10px;
     font-weight: 400;
     font-size: 21px;
@@ -353,7 +354,7 @@ li {
     text-align: left;
 }
 
-.sync__other>ul>li>p {
+.sync__other-text {
     width: 12.3125rem;
     font-weight: 400;
     font-size: 15px;
@@ -362,16 +363,11 @@ li {
     padding-top: 17px;
 }
 
-.sync__other>ul>li>img {
-    width: 1.875rem;
-    height: 1.875rem;
-}
-
 .plansPricing {
     background-color: #DDE7ED;    
 }
 
-.blue {
+.blue-num {
     color: #489FD9;
     font-weight: 400;
     font-size: 19px;
@@ -454,7 +450,7 @@ li {
     transform: scale(0.95);
 }
 
-.plansPricing__container {
+.plansPricing__inner {
     padding: 70px 0;
     text-align: center;
     display: flex;
@@ -463,20 +459,14 @@ li {
     flex-direction: column;
 }
 
-.plansPricing__container h2 {
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 36px;
-}
-
-.plansPricing__container p {
+.plansPricing__heading {
     padding-top: 0.625rem;
     font-weight: 400;
     font-size: 19px;
     line-height: 22px;
 }
 
-.plansPricing__anotherText {
+.plansPricing__contactUs {
     color: #333333;
     font-weight: 400;
     font-size: 14px;
@@ -504,7 +494,7 @@ li {
     line-height: 18px;
 }
 
-.blue-mini {
+.blue-text {
     color: #489FD9;
     font-weight: 400;
     font-size: 15px;
@@ -514,12 +504,12 @@ li {
     text-decoration: none;
 }
 
-.blue-mini:hover {
+.blue-text:hover {
     color: #57b4f3;
     font-size: 16px;
 }
 
-.sayAboutUs__container {
+.sayAboutUs__inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -528,14 +518,7 @@ li {
     text-align: center;
 }
 
-.sayAboutUs__container h2 {
-    font-weight: 400;
-    font-size: 29px;
-    line-height: 36px;
-    color: #333333;
-}
-
-.sayAboutUs__container p {
+.sayAboutUs__inner-text {
     color: #333333;
     font-weight: 400;
     font-size: 25px;
@@ -545,7 +528,7 @@ li {
     padding-top: 45px;
 }
 
-.sayAboutUs__container div {
+.sayAboutUs__inner-desName {
     font-weight: 400;
     text-align: center;
     font-size: 16px;
@@ -553,7 +536,7 @@ li {
     padding-top: 12px;
 }
 
-.sayAboutUs__container img {
+.sayAboutUs__inner-img {
     padding-top: 22px;
 }
 
@@ -567,25 +550,25 @@ li {
     align-items: center;
 }
 
-.partners__links img {
+.partners__link-img {
     max-width: 100%;
     padding-top: 25px;
     transition: all 0.2s ease-out;
 }
 
-.partners__links img:hover {
+.partners__link-img:hover {
     transform: translateY(-4px);
 }
 
-.partners__links img:active {
+.partners__link-img:active {
     transform: scale(0.9);
 }
-footer {
+.footer {
     background-color: #2B2C2E;
     color: #E6EAED;
 }
 
-.footer .container {
+.footer__inner {
     display: flex;
     gap: 9.25rem;
     padding-top: 35px;
@@ -606,7 +589,7 @@ footer {
     transform: scale(0.95);
 }
 
-.footer__socialMedia img {
+.footer__socialMedia-img {
     padding-top: 12px;
 }
 
@@ -615,28 +598,28 @@ footer {
     gap: 0.6875rem;
 }
 
-.socialMedia-icon img {
+.footer__icon-img {
     transition: all 0.2s ease-out;
 }
 
-.socialMedia-icon img:hover {
+.footer__icon-img:hover {
     transform: translateY(-4px);
 }
 
-.socialMedia-icon img:active {
+.footer__icon-img:active {
     transform: scale(0.9);
 }
 
-.footer__logo img {
+.footer__logo-img {
     max-width: 100%;
     transition: all 0.3s ease;
 }
 
-.footer__logo img:hover {
+.footer__logo-img:hover {
     transform: translateY(-2px);
 }
 
-.footer__logo img:active {
+.footer__logo-img:active {
     transform: scale(0.95);
 }
 
@@ -644,47 +627,22 @@ footer {
     display: flex;
     gap: 59px;
 }
-.footer__moreInfo:only-child {
-    display: flex;
-    flex-direction: column;    
-}
 
-.moreInfo-company {
+.footer__moreInfo-point {
     display: flex;
     flex-direction: column;
 }
 
-.moreInfo-company h3 {
-    padding-bottom: 10px;
-}
-
-.moreInfo-product {
-    display: flex;
-    flex-direction: column;
-}
-
-.moreInfo-product h3 {
-    padding-bottom: 0.625rem;
-}
-
-.moreInfo-legal {
-    display: flex;
-    flex-direction: column;
-}
-
-.moreInfo-legal h3 {
-    padding-bottom: 0.625rem;
-}
-
-.moreInfo-h3 {
+.footer__moreInfo-h3 {
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
     text-transform: uppercase;
     color: #E4E8EB;
+    padding-bottom: 10px;
 }
 
-.moreInfo-link {
+.footer__moreInfo-link {
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
@@ -692,10 +650,10 @@ footer {
     transition: all 0.2s ease-out;
 }
 
-.moreInfo-link:hover {
+.footer__moreInfo-link:hover {
     color: white;
 }
-.moreInfo-link:active {
+.footer__moreInfo-link:active {
     transform: scale(0.95);
 }
 
@@ -704,7 +662,7 @@ footer {
     color: #939596;
 }
 
-.copyright>.container p {
+.copyright__text {
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
