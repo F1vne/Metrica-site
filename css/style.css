@@ -578,22 +578,43 @@ li {
     padding-bottom: 35px;
 }
 
-.socialMedia-text {
+.footer__socialMedia-text {
     color: #939596;
     padding-top: 25px;
     transition: all 0.2s ease-out;
 }
 
-.socialMedia-text:hover {
-    color: white;
+.footer__form {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 322px;
+    height: 40px;
+}       
+
+.footer__form-input {
+    text-align: start;
+    border: none;
+    padding: 0 3% 0;
+    width: 60%;
+    background-color: #E6EAED;;
 }
 
-.socialMedia-text:active {
-    transform: scale(0.95);
+.footer__form-input::placeholder {
+    font-size: 16px;
+    line-height: 27px;
+    border: none;
 }
 
-.footer__socialMedia-img {
-    padding-top: 12px;
+.footer__form-btn {
+    background-color: #5F6166;
+    border: none;
+    color: #E6EAED;
+    cursor: pointer;
+    font-size: 15px;
+    width: 40%;
+    padding: auto auto;
 }
 
 .socialMedia-icon {
