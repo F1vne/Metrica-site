@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1">
@@ -223,9 +223,10 @@
             <a class="footer__logo" href="#"><img class="footer__logo-img" src="images/white-metric-logo.svg" alt=""></a>
             <div class="footer__socialMedia-text">Sign up for our newsletter</div>
             <form class="footer__form">
-                <input class="footer__form-input" type="email" placeholder="Your email">
+                <input class="footer__form-input" type="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" placeholder="Your e-mail">
                 <button class="footer__form-btn" type="submit">Send</button>
-            </form>            
+            </form>
+            <div class="footer__socialMedia-hint">In the format: user@mail.com</div>
             <div class="socialMedia-icon">
               <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/facebook-icon.svg" alt="facebook-icon"></a>
               <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/twitter-icon.svg" alt="twitter-icon"></a>
