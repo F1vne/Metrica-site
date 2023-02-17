@@ -590,8 +590,8 @@ li {
 }
 
 .footer__socialMedia-hint {
-    color: #939596;
     transition: all 0.2s ease-out;
+    color: #939596;
     padding-top: 12px;
     padding-bottom: 12px;
 }
