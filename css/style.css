@@ -589,19 +589,13 @@ li {
     transition: all 0.2s ease-out;
 }
 
-.footer__socialMedia-hint {
-    transition: all 0.2s ease-out;
-    color: #939596;
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-
 .footer__form {
     display: flex;
     justify-content: center;
     margin-top: 12px;
     width: 322px;
     height: 40px;
+    margin-bottom: 10px;
 }       
 
 .footer__form-input {
@@ -617,6 +611,25 @@ li {
     font-size: 16px;
     line-height: 27px;
     border: none;
+}
+
+.footer__form-input:focus:invalid {
+    background-color: #FDD;
+    outline: none;
+}
+
+.error {
+  padding: 0;
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
 }
 
 .footer__form-btn {
@@ -640,6 +653,7 @@ li {
 }
 
 .socialMedia-icon {
+    margin-top: 12px;
     display: flex;
     gap: 0.6875rem;
 }
