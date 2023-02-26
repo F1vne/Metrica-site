@@ -28,10 +28,18 @@ li {
     font-weight: 400;
 }
 
+.body--lock {
+    overflow: hidden;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
 .header {
     position: fixed;
     width: 100%;
-    z-index: 50;
+    z-index: 3;
     -webkit-box-shadow: 0px 9px 20px -5px rgba(34, 60, 80, 0.6);
     -moz-box-shadow: 0px 9px 20px -5px rgba(34, 60, 80, 0.6);
     box-shadow: 0px 9px 20px -5px rgba(34, 60, 80, 0.6);
@@ -121,6 +129,7 @@ li {
     transform: scale(0.9);
 }
 .grow {
+    overflow: hidden;
     background: url(..//images/background-grow.png);
     background-position: center;
     background-size: cover;
@@ -133,6 +142,7 @@ li {
     flex-wrap: nowrap;
     padding: 70px 0;
     gap: 68px;
+    margin-right: 10px;
 }
 
 .grow__info-article {
@@ -624,12 +634,13 @@ li {
   color: white;
   background-color: #900;
   border-radius: 0 0 5px 5px;
-
+  display: none;
   box-sizing: border-box;
 }
 
 .error.active {
   padding: 0.3em;
+  display: block;
 }
 
 .footer__form-btn {
@@ -729,3 +740,64 @@ li {
     padding: 1.1875rem 0;
 }
 
+.email-sent {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-sent.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.email-sent.open .email-sent__content {
+/*    transform: perspective(600px) translate(0px, 0%) rotateX(0deg);*/
+    opacity: 1;
+}
+
+.email-sent__body {
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.email-sent__content {
+    background-color: white;
+    color: black;
+    max-width: 800px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+/*    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);*/
+}
+
+.email-sent__close img{
+    position: absolute;
+    max-width: 30px;
+    top: 5px;
+    right: 5px;
+}
+.email-sent__title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.email-sent__text {
+
+}

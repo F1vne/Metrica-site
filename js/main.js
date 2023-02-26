@@ -26,7 +26,6 @@ if (emailSentCloseIcon.length > 0) {
     emailSent.addEventListener('click', function (e) {
       emailSentClose(el.closest('.email-sent'));
       e.preventDefault();
-      // body.classList.toggle("body--lock");
     })
   }
 }
@@ -106,7 +105,6 @@ function showError() {
 }
 
 form.addEventListener('submit', function (event) {
-  ////
   if (email.validity.valid) {
     let name = formBtn.getAttribute('data-modal-btn');
     let modal = document.querySelector("[data-modal-window='" + name + "']");
@@ -119,6 +117,5 @@ form.addEventListener('submit', function (event) {
   }
   bodyLock();
   emailError.className = 'error';
-  // body.classList.toggle("body--lock");
 });
 
