@@ -115,7 +115,6 @@ body.lock {
     background-color: #e6e6e6;
     padding: 10px;
     border-radius: 7rem;
-    font-size: 16px;
 }
 
 .menu-link:active {
@@ -204,14 +203,14 @@ body.lock {
 }
 
 .grow__info-link:hover {
-    font-size: 17px;
+    transform: scale(1.05);
     color: white;
 }
 
 .grow__info-link:active {
     transition: 0.1s ease-in-out;
     color: #c0bfbf;
-    font-size: 16px;
+    transform: scale(0.95);
 }
 
 .grow__inner-img {
@@ -524,7 +523,6 @@ body.lock {
 
 .blue-text:hover {
     color: #57b4f3;
-    font-size: 16px;
 }
 
 .sayAboutUs__inner {
@@ -650,7 +648,6 @@ body.lock {
     cursor: pointer;
     font-size: 15px;
     width: 40%;
-    outline-right: none;
 }
 
 .footer__form-btn:hover {
@@ -659,7 +656,7 @@ body.lock {
 
 .footer__form-btn:active {
     transition: background 0.2s ease-in-out;
-    font-size: 14px;
+    transform: scale(0.95);
     background-color: #c0bfbf;
 }
 
