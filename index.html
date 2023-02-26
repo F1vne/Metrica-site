@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/adaptive.css">
 </head>
 <body class="body">
-    <header class="header">
+  <div class="wrapper">
+      <header id="header" class="header lock-padding">
         <div class="container">
             <div class="header__body">
                 <a class="header__logo-link" href="#" >
@@ -39,12 +40,12 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <main class="main">
-      <section class="grow">
-        <div class="container">
+      </header>
+      <main class="main">
+         <section class="grow">
+          <div class="container">
           <div class="grow__inner">
-            <div class="grow__info-">
+            <div class="grow__info">
               <div class="grow__info-article">
                 <h1 class="grow__info-title">Grow Your Business 10x with Metric</h1>
                 <p class="grow__info-text">The Metric Dashboard brings all of your business insights under one roof. Revenue metrics, social, integrations - everything.</p>
@@ -56,9 +57,9 @@
             </div>
             <img class="grow__inner-img" src="images/grow-graphik.png" alt="chart">
           </div>
-        </div>
-      </section>
-      <section class="press">
+          </div>
+        </section>
+        <section class="press">
         <div class="container">
           <div class="press__inner">
             <h3 class="press__title">IN THE PRESS</h3>
@@ -71,8 +72,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="sync">
+        </section>
+        <section class="sync">
         <div class="container">
           <div class="sync__inner">
             <h2 class="big-title">Sync Across All Devices</h2>
@@ -121,8 +122,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="plansPricing">
+        </section>
+        <section class="plansPricing">
         <div class="container">
           <div class="plansPricing__inner">
             <h2 class="big-title">Plans & Pricing</h2>
@@ -192,8 +193,8 @@
             <div class="plansPricing__contactUs">Need more Data Points or Team Members? Please<a class="blue-text" href="#">contact us.</a></div>
           </div>
         </div>
-      </section>
-      <section class="sayAboutUs">
+        </section>
+        <section class="sayAboutUs">
         <div class="container">
           <div class="sayAboutUs__inner">
             <h2 class="big-title sayAboutUs__inner-title">What People Say About Us</h2>
@@ -202,8 +203,8 @@
              <div class="sayAboutUs__inner-desName">Kyle Killit <br>Designer at Tiempo Labs</div>
           </div>
         </div>
-      </section>
-      <section class="partners">
+        </section>
+        <section class="partners">
         <div class="container">
           <div class="partners__links">
             <a class="partners__link" href="#"><img class="partners__link-img"src="images/johnson-logo.svg" alt="partners-icon"></a>
@@ -214,59 +215,66 @@
             <a class="partners__link" href="#"><img class="partners__link-img"src="images/neutrogena-logo.svg" alt="partners-icon"></a>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__socialMedia">
-            <a class="footer__logo" href="#"><img class="footer__logo-img" src="images/white-metric-logo.svg" alt=""></a>
-            <div class="footer__socialMedia-text">Sign up for our newsletter</div>
-
-            <form class="footer__form" novalidate>
-                <input class="footer__form-input" type="email"  name="email" placeholder="Your e-mail" required minlength="8">
-                <button class="footer__form-btn" type="submit">Send</button>
-            </form>
-            <span class="error" aria-live="polite"></span>
-
-            <div class="socialMedia-icon">
-              <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/facebook-icon.svg" alt="facebook-icon"></a>
-              <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/twitter-icon.svg" alt="twitter-icon"></a>
-              <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/inst-icon.svg" alt="instagram-icon"></a>
-              <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/email-icon.svg" alt="email-icon"></a>
+        </section> 
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__socialMedia">
+              <a class="footer__logo" href="#"><img class="footer__logo-img" src="images/white-metric-logo.svg" alt=""></a>
+              <div class="footer__socialMedia-text">Sign up for our newsletter</div>
+  
+              <form class="footer__form" novalidate>
+                  <input class="footer__form-input" type="email"  name="email" placeholder="Your e-mail" required minlength="8">
+                  <button class="footer__form-btn" data-modal-btn="modal1" type="submit">Send</button>
+              </form>
+              <span class="error" aria-live="polite"></span>
+  
+              <div class="socialMedia-icon">
+                <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/facebook-icon.svg" alt="facebook-icon"></a>
+                <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/twitter-icon.svg" alt="twitter-icon"></a>
+                <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/inst-icon.svg" alt="instagram-icon"></a>
+                <a class="footer__icon" href="#"><img class="footer__icon-img"src="images/email-icon.svg" alt="email-icon"></a>
+              </div>
             </div>
-          </div>
-          <div class="footer__moreInfo">
-            <div class="footer__moreInfo-point">
-              <h3 class="footer__moreInfo-h3">Company</h3>
-              <a class="footer__moreInfo-link" href="#">Home</a>
-              <a class="footer__moreInfo-link" href="#">Features</a>
-              <a class="footer__moreInfo-link" href="#">Clients</a>
-              <a class="footer__moreInfo-link" href="#">Pricing</a>
-              <a class="footer__moreInfo-link" href="#">Sign Up</a>
+            <div class="footer__moreInfo">
+              <div class="footer__moreInfo-point">
+                <h3 class="footer__moreInfo-h3">Company</h3>
+                <a class="footer__moreInfo-link" href="#">Home</a>
+                <a class="footer__moreInfo-link" href="#">Features</a>
+                <a class="footer__moreInfo-link" href="#">Clients</a>
+                <a class="footer__moreInfo-link" href="#">Pricing</a>
+                <a class="footer__moreInfo-link" href="#">Sign Up</a>
+              </div>
+              <div class="footer__moreInfo-point">
+                <h3 class="footer__moreInfo-h3">Product</h3>
+                <a class="footer__moreInfo-link" href="#">Analytics</a>
+                <a class="footer__moreInfo-link" href="#">Businesses</a>
+                <a class="footer__moreInfo-link" href="#">Testimonials</a>
+                <a class="footer__moreInfo-link" href="#">Integrations</a>
+              </div>
+              <div class="footer__moreInfo-point">
+                <h3 class="footer__moreInfo-h3">Legal</h3>
+                <a class="footer__moreInfo-link" href="#">Privacy Policy</a>
+                <a class="footer__moreInfo-link" href="#">Terms of Use</a>
+              </div>
             </div>
-            <div class="footer__moreInfo-point">
-              <h3 class="footer__moreInfo-h3">Product</h3>
-              <a class="footer__moreInfo-link" href="#">Analytics</a>
-              <a class="footer__moreInfo-link" href="#">Businesses</a>
-              <a class="footer__moreInfo-link" href="#">Testimonials</a>
-              <a class="footer__moreInfo-link" href="#">Integrations</a>
-            </div>
-            <div class="footer__moreInfo-point">
-              <h3 class="footer__moreInfo-h3">Legal</h3>
-              <a class="footer__moreInfo-link" href="#">Privacy Policy</a>
-              <a class="footer__moreInfo-link" href="#">Terms of Use</a>
-            </div>
-          </div>
-        </div>  
-      </div>
-    </footer>
-    <div class="copyright">
+          </div>  
+        </div>
+      </footer>
+      <div class="copyright">
         <div class="container">
             <p class="copyright__text">Copyright 2014 Metric. All Rights Reserved. Brand logos for demonstration purposes only.</p>
         </div>
+  </div>
+  <div data-modal-window="modal1" id="email-sent" class="email-sent">
+    <div class="email-sent__body">
+      <div class="email-sent__content">
+        <a class="email-sent__close" href="#header" ><img src="images/icon-close.svg" alt="icon close"></a>
+        <div class="email-sent__title">Информация отправлена!</div>
+      </div>
     </div>
-    <script src="js/main.js"></script>
-
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
