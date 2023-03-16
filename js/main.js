@@ -7,8 +7,6 @@ headerBurger.addEventListener('click', () => {
 	body.classList.toggle("lock");
 });
 
-
-
 const emailSent = document.querySelector(".email-sent");
 const emailSentCloseIcon = document.querySelectorAll(".email-sent__close");
 if (emailSentCloseIcon.length > 0) {
@@ -20,7 +18,6 @@ if (emailSentCloseIcon.length > 0) {
 		});
 	}
 };
-
 
 function emailSentClose(emailSentActive, doUnlock = true) {
 	if (unlock) {
@@ -58,7 +55,6 @@ function bodyLock() {
 	}, timeout);
 };
 
-
 function bodyUnlock() {
 		setTimeout(function () {
 			if(lockPadding.length > 0) {
@@ -76,8 +72,6 @@ function bodyUnlock() {
 			unlock = true;
 		}, timeout);
 };
-
-
 
 const emailError = document.querySelector(".footer__form-error");
 const email = document.querySelector(".footer__form-input");
@@ -117,4 +111,3 @@ form.addEventListener('submit', function (event) {
 	bodyLock();
 	emailError.className = 'footer__form-error';
 });
-

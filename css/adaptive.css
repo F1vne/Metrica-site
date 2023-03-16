@@ -1,4 +1,4 @@
-@media  (max-width: 969px) {
+@media (max-width: 969px) {
 	.plans-pricing__cards {
 		flex-wrap: wrap;
 		padding-top: 30px;
@@ -88,7 +88,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
 }
 
 @media (max-width: 765px) {
@@ -136,9 +135,6 @@
 	.sync__other {
 		padding-top: 20px;
 	}
-}
-
-@media (max-width: 672px) {
 }
 
 @media (max-width: 475px) {
